@@ -3,91 +3,109 @@
 <head>
     <link rel="stylesheet" href="styles.css">
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digvijay's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktP0fWxPUS3xBLTX0j2VZlAFx68KHUJ0yYrsKXm7s" crossorigin="anonymous">
+    <style>
+        #home {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+        #main-content {
+            display: none; /* Hide the main content initially */
+        }
+    </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Your Name</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1>Hi, I'm Your Name</h1>
-      <p class="lead">Your tagline or brief description</p>
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center">About Me</h2>
-      <p class="text-center">A brief introduction about yourself and your interests.</p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center">Projects</h2>
-      <div class="row">
-        <!-- Example Project Card -->
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="project-image.jpg" class="card-img-top" alt="Project Image">
-            <div class="card-body">
-              <h5 class="card-title">Project Title</h5>
-              <p class="card-text">A brief description of your project.</p>
-              <a href="https://github.com/your-username/project" class="btn btn-primary">View on GitHub</a>
-            </div>
-          </div>
+    <div id="home">
+        <div>
+            <h1>Welcome to Digvijay's Portfolio</h1>
+            <p class="lead">Engineer | Coder | Explorer</p>
+            <button class="btn btn-light btn-lg" onclick="enterSite()">Enter</button>
         </div>
-        <!-- Repeat for more projects -->
-      </div>
     </div>
-  </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-5">
-    <div class="container">
-      <h2 class="text-center">Skills</h2>
-      <p class="text-center">List your technical skills here.</p>
+    <div id="main-content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">SayHiTo-D</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I'm Digvijay, a pre-final year Electronics and Telecommunication student with a passion for technology and exploration. I enjoy working on embedded systems and building projects that make a difference.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Flipper Zero Mini Project</h5>
+                                <p class="card-text">A customizable hacking device built for fun and learning.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Line Follower Bot</h5>
+                                <p class="card-text">An autonomous bot that uses a custom PID algorithm for efficient line following.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Submarine Communication Survey</h5>
+                                <p class="card-text">A research report on effective communication methods for submarines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Email: digvijay@example.com</p>
+                <p>LinkedIn: <a href="#">linkedin.com/in/digvijay</a></p>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2024 Digvijay. All Rights Reserved.</p>
+        </footer>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center">Contact</h2>
-      <p class="text-center">Feel free to reach out to me via email or connect on LinkedIn.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center py-3">
-    <p>© 2024 Your Name. All rights reserved.</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-q20VKI0X5Bepm32mNbL6hI1AczVVcUmTcDcv2HR5uv9SRIsA7KHyRK5T7cz35HBk" crossorigin="anonymous"></script>
+    <script>
+        function enterSite() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
